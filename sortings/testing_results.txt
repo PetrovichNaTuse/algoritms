@@ -1,0 +1,59 @@
+Результаты получены при тестировании на массиве, который
+создан следующей функцией:
+  randomArray(100000, {from: -1346236, to: 2656346})
+
+Для сравнения стандартная сортировка javascript:
+  arr.sort((a, b) => a - b):
+test standart sort
+  test 1: 0.087 sec.
+  test 2: 0.085 sec.
+  test 3: 0.088 sec.
+
+bubbled_sort
+  test 1: 37.908 sec.
+  test 2: 38.993 sec.
+  test 3: 35.479 sec.
+
+insertion_sort
+  test 1: 17.473 sec.
+  test 2: 17.225 sec.
+  test 3: 17.285 sec.
+
+selection_sort
+  test 1: 10.184 sec.
+  test 2: 10.449 sec.
+  test 3: 10.315 sec.
+
+merge_sort
+  test 1: 0.108 sec.
+  test 2: 0.113 sec.
+  test 3: 0.091 sec.
+
+quik_sort
+  test 1: 0.169 sec.
+  test 2: 0.176 sec.
+  test 3: 0.164 sec.
+
+
+Результаты нелинейных сортировок с большим числом элементов,
+которые в качестве аргумента принимают следующий массив:
+  randomArray(10000000, {from: -149165194, to: 2839118465})
+
+
+Для сравнения стандартная сортировка javascript:
+  arr.sort((a, b) => a - b):
+test standart sort
+  test 1: 183.694 sec.
+  test 2: 184.486 sec.
+  test 3: 179.212 sec.
+
+merge_sort
+  test 1: 12.732 sec.
+  test 2: 12.938 sec.
+  test 3: 12.454 sec.
+
+quik_sort
+  test 1: 16.237 sec.
+  test 2: 
+  test 3: 
+
