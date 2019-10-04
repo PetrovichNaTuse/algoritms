@@ -8,7 +8,7 @@
 function bubbled_sort(arr) {
   'use strict'
   var t, len = arr.length;
-  for(let i = 0; i < len; i++) {
+  for(let i = 0; i < len - 1; i++) {
     for(let j = len - 1; j > i; j--) {
       if (arr[j] < arr[j - 1]) // если правое число < левого
         t = arr[j], arr[j] = arr[j - 1], arr[j - 1] = t;
