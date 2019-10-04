@@ -8,10 +8,10 @@
  */
 function selection_sort(arr) {
   'use strict'
-  var j, len = arr.length;
-  var i = 0, min = 0;
+  var len = arr.length;
+  var i = 0;
   while(i < len) {
-    j = i;
+    var min = i, j = i + 1;
     while(j < len) {
       if (arr[j] < arr[min]) min = j;
       j++;

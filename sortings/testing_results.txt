@@ -9,10 +9,14 @@ test standart sort
   test 2: 0.085 sec.
   test 3: 0.088 sec.
 
-bubbled_sort
+bubbled_sort (с деструктуризацией)
   test 1: 37.908 sec.
   test 2: 38.993 sec.
   test 3: 35.479 sec.
+bubbled_sort (без деструктуризации)
+  test 1: 28.110 sec.
+  test 2: 28.328 sec.
+  test 3: 27.936 sec.
 
 insertion_sort
   test 1: 17.473 sec.
