@@ -9,22 +9,13 @@
  **/
 function insertion_sort(arr) {
   // Вспомогательная переменная для перестановок
-  var notSortedNumber, nextSortedNumber;
+  var len = arr.length;
   // Цикл по не отсортированным элементам справа
-  for(var i = 1; i < arr.length; i++) {
-    // Цикл по отсортированным элементам слева
-    for(var j = i; j > 0; j--) {
-      // Текущий сравниваемый элемент
-      notSortedNumber = arr[j];
-      // Следующий отсортированны элемент
-      nextSortedNumber = arr[j - 1];
-      // Если не отсортированный элемент < отсортированного
-      if (notSortedNumber < nextSortedNumber) {
-        // то поменять их местами и сравнить со следующим
-        arr[j] = nextSortedNumber,
-        arr[j - 1] = notSortedNumber;
-      }
-    }
+  for(var i = 1; i < len; i++) {
+    var self = arr[i], j = i - 1; 
+    while(j >= 0 && self < arr[j])
+      arr[j + 1] = arr[j], j--;
+    arr[j + 1] = self;
   }
   return arr;
 }
