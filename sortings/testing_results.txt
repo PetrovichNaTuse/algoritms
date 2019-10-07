@@ -70,6 +70,12 @@ merge_sort
   test 2: 12.938 sec.
   test 3: 12.454 sec.
 
+merge_sort update v2
+  test 1: 5.463 sec.
+  test 2: 5.347 sec.
+  test 3: 5.334 sec.
+  // но на сайте каком то бысрее на пол секунды
+
 ###
 quik_sort
   test 1: 16.237 sec.
