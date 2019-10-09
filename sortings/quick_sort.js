@@ -5,16 +5,14 @@ function quick_sort(arr) {
 
   var i = 0, len = arr.length,
       s = Math.round(Math.random() * (len - 1));
-  const l = [], r = [];
+  const l = [], r = [], m = arr[s];
   while(i < len) {
-    if (i === s || arr[i] == undefined) {
+    if (i === s) {
       i++;
-			continue;
+      continue;
     }
-    if (arr[i] < arr[s]) l.push(arr[i]);
-    else r.push(arr[i]);
-		i++;
+    if (arr[i] < m) l[l.length] = arr[i++];
+    else r[r.length] = arr[i++];
   }
-	l.push(arr[s]);
-  return quick_sort(l).concat(quick_sort(r));
+  return quick_sort(l).concat(m, quick_sort(r));
 }
