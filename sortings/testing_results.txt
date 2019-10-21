@@ -39,6 +39,12 @@ selection_sort
   test 3: 10.315 sec.
 
 ###
+shell_sort
+  test 1: 0.060 sec.
+  test 2: 0.042 sec.
+  test 3: 0.040 sec.
+
+###
 merge_sort
   test 1: 0.108 sec.
   test 2: 0.113 sec.
@@ -87,3 +93,8 @@ quick_sort update v2
   test 2: 14.130 sec.
   test 3: 13.677 sec.
 
+###
+shell_sort
+  test 1: 11.843 sec.
+  test 2: 12.359 sec.
+  test 3: 12.152 sec.
