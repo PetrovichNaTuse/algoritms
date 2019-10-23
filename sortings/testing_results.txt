@@ -98,3 +98,8 @@ shell_sort
   test 1: 11.843 sec.
   test 2: 12.359 sec.
   test 3: 12.152 sec.
+
+shell_sort update v2 (можно попробовать разные диапазоны)
+  test 1: 6.373 sec.
+  test 2: 6.397 sec.
+  test 3: 6.041 sec.
