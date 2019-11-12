@@ -21,7 +21,7 @@ function bench(f) {
     test.lastTest = ((Date.now() - perf) / 1000).toFixed(3) + ' sec.';
     console.log('Вызов занял: ' + test.lastTest);
     console.log('Результат последнего вызова находится в свойстве lastTest');
-    return result;
+    // return result;
   }
 }
 
